@@ -6,10 +6,11 @@ def join_nested_strings(array)
     while inner < array[count].length do
       if array[count][inner].is_a? String
         str = array[count][inner]
+        strJoin << str
       end
       inner +=1
     end
-    strJoin << str
+    
     count +=1
   end
   strJoin
