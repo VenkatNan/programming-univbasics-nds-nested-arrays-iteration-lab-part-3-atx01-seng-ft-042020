@@ -1,17 +1,17 @@
 def join_nested_strings(array)
   count = 0
-  min_nest = []
+  strJoin = []
   while count < array.length do
     inner=0
     while inner < array[count].length do
-      if min > array[count][inner]
-        min = array[count][inner]
+      #if min > array[count][inner]
+        str = array[count][inner]
       end
       inner +=1
     end
-    min_nest <<  min
+    strJoin << str
     count +=1
   end
-  min_nest
+  strJoin
+  array
 end
-results_array
