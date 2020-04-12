@@ -12,5 +12,5 @@ def join_nested_strings(array)
     strJoin << str
     count +=1
   end
-  strJoin.join
+  strJoin
 end
