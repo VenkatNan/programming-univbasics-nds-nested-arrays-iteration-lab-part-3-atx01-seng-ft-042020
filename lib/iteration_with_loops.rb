@@ -1,16 +1,17 @@
 def join_nested_strings(mixed_data_1,mixed_data_2)
   count = 0
-  results_array=[]
-  
-  while count < mixed_data_1.length do
-   p mixed_data_1[count]
-   inner_count = 0
-   
-   while inner_count< mixed_data_1[count].length do
-      results_array << mixed_data_1[count][inner_count]
-      inner_count += 1
+  min_nest = []
+  while count < array.length do
+    inner=0
+    while inner < array[count].length do
+      if min > array[count][inner]
+        min = array[count][inner]
+      end
+      inner +=1
     end
+    min_nest <<  min
+    count +=1
   end
-  count +=1
+  min_nest
 end
 results_array
