@@ -1,4 +1,4 @@
-def join_nested_strings(mixed_data_1,mixed_data_2)
+def join_nested_strings(array)
   count = 0
   min_nest = []
   while count < array.length do
